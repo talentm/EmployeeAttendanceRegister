@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+          package="talss.employeeattendanceregister">
+
+    <!--
+         The ACCESS_COARSE/FINE_LOCATION permissions are not required to use
+         Google Maps Android API v2, but you must specify either coarse or fine
+         location permissions for the 'MyLocation' functionality.
+    -->
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+
+    <application
+        android:name=".StartApp"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".admin.AdminLogInActivity"
+                  android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
+        <activity android:name=".WelcomeActivity"
+                  android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="talss.employeeattendanceregister.WelcomeActivity"/>
+
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <activity android:name=".employee.EmployeeLogInActivity"
+                  android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="talss.employeeattendanceregister.EmployeeLogInActivity"/>
+
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <activity android:name=".admin.AdminSignUpActivity"
+                  android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="talss.employeeattendanceregister.AdminSignUpActivity"/>
+
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <activity android:name=".admin.AdminEmployeeListActivity"
+                  android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="talss.employeeattendanceregister..admin.AdminEmployeeListActivity"/>
+
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <activity android:name=".employee.EmployeeSignUpActivity"
+                  android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="talss.employeeattendanceregister.EmployeeSignUpActivity"/>
+
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <activity android:name=".employee.EmployeeAdminListActivity"
+                  android:screenOrientation="portrait">
+        </activity>
+        <activity android:name=".employee.EmployeeDetailsActivity"
+                  android:screenOrientation="portrait">
+        </activity>
+        <activity android:name=".admin.AdminEmployeeViewActivity"
+                  android:screenOrientation="portrait">
+        </activity>
+        <activity android:name=".admin.AdminEmployeeAttendanceReportActivity"
+                  android:screenOrientation="portrait">
+        </activity>
+        <!--
+             The API key for Google Maps-based APIs is defined as a string resource.
+             (See the file "res/values/google_maps_api.xml").
+             Note that the API key is linked to the encryption key used to sign the APK.
+             You need a different API key for each encryption key, including the release key that is used to
+             sign the APK for publishing.
+             You can define the keys for the debug and release targets in src/debug/ and src/release/. 
+        -->
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="@string/google_maps_key"/>
+
+        <activity
+            android:name=".attendance.EmployeeAttendanceMapActivity"
+            android:label="@string/title_activity_employee_attendance"
+            android:screenOrientation="portrait">
+        </activity>
+        <activity android:name=".attendance.EmployeeAttendanceActivity"
+                  android:screenOrientation="portrait">
+        </activity>
+        <activity android:name=".admin.ChooseActivity"
+                  android:screenOrientation="portrait">
+        </activity>
+        <activity android:name=".admin.AdminUploadPhotoActivity"
+                  android:screenOrientation="portrait">
+        </activity>
+        <activity android:name=".employee.EmployeeUploadPhotoActivity"
+                  android:screenOrientation="portrait">
+        </activity>
+        <activity android:name="talss.tests.FinalAppBarTestActivity"
+                  android:screenOrientation="portrait">
+        </activity>
+    </application>
+
+</manifest>

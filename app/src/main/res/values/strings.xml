@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">EmployeeAttendanceRegister</string>
+    <string name="title_activity_admin_log_in">AdminLogInActivity</string>
+    <string name="title_activity_attendance">AttendanceActivity</string>
+    <string name="action_edit">Edit</string>
+    <string name="action_delete">Delete</string>
+    <string name="title_activity_employee_attendance">Map</string>
+    <string name="action_logout">Logout</string>
+</resources>

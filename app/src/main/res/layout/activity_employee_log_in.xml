@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="16dp"
+    android:paddingLeft="16dp"
+    android:paddingRight="16dp"
+    android:paddingTop="16dp"
+    android:orientation="vertical"
+    android:background="@mipmap/login_background"
+    tools:context=".employee.EmployeeLogInActivity">
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="@drawable/rounded_edit_text"
+        android:inputType="textEmailAddress"
+        android:hint="Email address"
+        android:id="@+id/employee_email_edit_text"
+        android:layout_marginTop="200dp"
+        android:layout_marginBottom="20dp">
+        <requestFocus/>
+    </EditText>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="@drawable/rounded_edit_text"
+        android:inputType="textPassword"
+        android:hint="Password"
+        android:id="@+id/employee_password_edit_text"
+        android:layout_marginBottom="20dp"/>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:text="Log in"
+        android:textColor="@android:color/background_light"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textAllCaps="false"
+        android:background="@drawable/rounded_button"
+        android:id="@+id/employee_login_button"
+        android:layout_marginBottom="20dp"/>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:textColor="@android:color/background_light"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Register"
+        android:textAllCaps="false"
+        android:background="@drawable/rounded_button"
+        android:id="@+id/employee_register_button"/>
+
+</LinearLayout>

@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/list_divider"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/employee_attendance_date"
+        android:layout_height="40dp"
+        android:layout_width="wrap_content"
+        android:layout_gravity="center"
+        android:textAppearance="?android:attr/textAppearanceMedium"/>
+
+    <TextView
+        android:id="@+id/employee_attendance_check_in_time"
+        android:layout_height="40dp"
+        android:layout_width="wrap_content"
+        android:layout_gravity="center"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:paddingLeft="20dp"/>
+
+    <TextView
+        android:id="@+id/employee_attendance_check_out_time"
+        android:layout_height="40dp"
+        android:layout_width="wrap_content"
+        android:layout_gravity="center"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:paddingLeft="20dp"/>
+
+    <TextView
+        android:id="@+id/employee_attendance_hours_spent"
+        android:layout_height="40dp"
+        android:layout_width="wrap_content"
+        android:layout_gravity="center"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:paddingLeft="20dp"/>
+
+</LinearLayout>
+

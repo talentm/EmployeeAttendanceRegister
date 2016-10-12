@@ -1,0 +1,69 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:tools="http://schemas.android.com/tools"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical"
+              android:background="@mipmap/background"
+              tools:context="talss.employeeattendanceregister.attendance.EmployeeAttendanceMapActivity">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginBottom="10dp"
+        android:textAlignment="center"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="@android:color/darker_gray"
+        android:textStyle="bold"
+        android:id="@+id/employee_attendance_full_date"/>
+
+    <ImageButton
+        android:layout_width="180dp"
+        android:layout_height="180dp"
+        android:src="@drawable/check_in"
+        android:layout_gravity="center"
+        android:background="@null"
+        android:layout_marginBottom="10dp"
+        android:id="@+id/employee_attendance_check_in_button"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:textAlignment="center"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textStyle="bold"
+        android:textColor="@android:color/darker_gray"
+        android:text="Your check in time : "
+        android:id="@+id/employee_attendance_check_in_text"/>
+
+    <ImageButton
+        android:layout_width="180dp"
+        android:layout_height="180dp"
+        android:layout_gravity="center"
+        android:background="@null"
+        android:src="@drawable/check_out"
+        android:layout_marginBottom="10dp"
+        android:id="@+id/employee_attendance_check_out_button"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:textAlignment="center"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="@android:color/darker_gray"
+        android:textStyle="bold"
+        android:layout_marginBottom="10dp"
+        android:id="@+id/employee_attendance_check_out_text"
+        android:text="Your check out time : "/>
+
+    <!--<TextView-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="40dp"-->
+        <!--android:textAlignment="center"-->
+        <!--android:textAppearance="?android:attr/textAppearanceMedium"-->
+        <!--android:textStyle="bold"-->
+        <!--android:id="@+id/employee_attendance_hours_spent_text"-->
+        <!--android:text=""/>-->
+</LinearLayout>
+
